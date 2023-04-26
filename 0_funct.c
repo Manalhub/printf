@@ -6,26 +6,6 @@ int _putchar(char z)
 }
 
 /**
- * _strcmp - compare strings
- * @s1: the first string
- * @s2: the second string
- */
-int _strcmp(const char *s1, const char *s2)
-{
-	int n = 0;
-
-	while ((s1[n] != '\0') && (s2[n] != '\0'))
-	{
-		if (s1[n] != s2[n])
-		{
-			return (-1);
-		}
-		n++;
-	}
-	return (s1[n] == s2[n]);
-}
-
-/**
  * printchar - prints a single character to stdout
  * return (1)
  */
@@ -57,5 +37,3 @@ int printstring(va_list args)
 	}
 	return (rev);
 }
-
-

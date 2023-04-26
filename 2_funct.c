@@ -13,8 +13,8 @@ int (*theprint(const char *format))(va_list)
 
 	for (; formats[i].specf != NULL; i++)
 	{
-		if (_strcmp(format, formats[i].specf) == 0)
-			return (formats[i].function);
+		if (*format==*(formats[i].specf))
+			return formats[i].function;
 	}
 
 	return (NULL);
