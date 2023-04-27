@@ -26,6 +26,8 @@ int printinteger(va_list args)
 {
 	int n = va_arg(args, int);
 	int i = 0;
+        if (n == 0)
+                i++;
 
 	if (n < 0)
 	{
