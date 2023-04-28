@@ -1,11 +1,12 @@
 #include"main.h"
 
 /**
- * _putchar - writes the character z to stdout
- * @z: The character to print
+ * _putchar - writes a character to stdout
  *
- * Return: On success 1.
- * On error, -1 is returned.
+ * @c: the character to print
+ *
+ * Return: On success, returns the number of characters written (1).
+ *         On error, returns -1 and sets errno appropriately.
  */
 int _putchar(char z)
 {
@@ -13,9 +14,12 @@ int _putchar(char z)
 }
 
 /**
- * printchar - prints a single character to stdout
+ * _putchar - writes a character to stdout
  *
- * return (1)
+ * @c: the character to print
+ *
+ * Return: On success, returns the number of characters written (1).
+ *         On error, returns -1 and sets errno appropriately.
  */
 int printchar(va_list args)
 {
@@ -24,9 +28,11 @@ int printchar(va_list args)
 
 /**
  * printstring - prints a string to stdout
- * @str: the string to print
  *
- * return rev.
+ * @args: a va_list of arguments containing the string to print
+ *
+ * Return: the number of characters printed.
+ *         if an error occurs, -1 is returned.
  */
 int printstring(va_list args)
 {
