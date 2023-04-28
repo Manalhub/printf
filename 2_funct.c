@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * theprint - function that selects the correct function to use
- * asked by the user.
- * @format: operator passed as argument to the program.
- * @args: arguments to the function
+ * theprint - selects the function to use based on the given format specifier.
  *
- * Return: a pointer to the function that corresponds to the operator given as
- * a parameter. Example: if s is passed as a parameter, this function will
- * return a pointer to the function printstring.
+ * @format: the format specifier character.
+ * @args: a va_list of arguments for the selected function.
+ *
+ * Return: a pointer to the function corresponding to the format specifier.
+ *         NULL if no matching function is found.
  */
 int (*theprint(const char *format))(va_list args)
 {
