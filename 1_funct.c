@@ -1,9 +1,11 @@
 #include"main.h"
 
 /**
- * printpercent - prints a percent sign to stdout
+ * printpercent - Prints a percent symbol
  *
- * return : 1,
+ * @args: argument list passed from _printf
+ *
+ * Return: 1, length of printed percent symbol
  */
 int printpercent(va_list args)
 {

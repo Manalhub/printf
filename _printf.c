@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _printf - prints formatted text to stdout
+ * @format: the format string
+ *
+ * Return: number of characters printed (excluding the null byte)
+ */
 int _printf(const char *format, ...)
 {
 	int count = 0;
